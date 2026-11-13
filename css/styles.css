@@ -314,3 +314,21 @@ footer a { text-decoration: none; } footer a:hover { color: var(--text); }
 }
 @keyframes llenar { from { width: 0; } }
 @keyframes rayas { to { background-position: 22.6px 0, 0 0; } }
+
+/* ---------- Foto circular en el inicio ---------- */
+.sign .sign-photo {
+  width: 76%; height: auto; aspect-ratio: 1; object-fit: cover; object-position: center 35%;
+  border-radius: 50%;
+  border: 3px solid #c4a4ff;
+  box-shadow:
+    0 0 0 6px rgba(124, 58, 237, .25),
+    0 0 26px 4px rgba(160, 107, 255, .85),
+    0 0 70px 10px rgba(124, 58, 237, .55);
+  filter: none;
+}
+.sign .sign-badge {
+  position: absolute; left: 50%; bottom: 4%; transform: translateX(-50%);
+  width: 23%; z-index: 2;
+  filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 14px rgba(160, 107, 255, .9));
+  animation: none;
+}
