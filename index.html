@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diego Navarro · Ingeniero de Software</title>
+  <meta name="description" content="Diego Navarro, Ingeniero de Software. Desarrollo de páginas web, aplicaciones móviles y sistemas a la medida.">
+  <meta name="theme-color" content="#0c0a12">
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Íconos (se reutilizan con <use href="#i-...">) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r="1.3"/><circle cx="17.5" cy="10.5" r="1.3"/><circle cx="8.5" cy="7.5" r="1.3"/><circle cx="6.5" cy="12.5" r="1.3"/><path d="M12 2a10 10 0 0 0 0 20c1 0 1.7-.8 1.7-1.7 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.9.8-1.7 1.7-1.7h2A5.6 5.6 0 0 0 22 11c0-5-4.5-9-10-9z"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></symbol>
+  <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1z"/><path d="m12 15-3-3a22 22 0 0 1 2-4A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2z"/><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2-5.4A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-gh" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.4 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.6 16 2.5a13.4 13.4 0 0 0-7 0C6.3.6 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.8c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Diego Navarro, ir al inicio">
+      <img src="assets/img/logo.svg" alt="" width="46" height="46">
+      <span><b>Diego <span>Navarro</span></b><small>Ingeniero de Software</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#inicio" class="on">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#tecnologias">Tecnologías</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-p" href="#contacto"><svg class="i"><use href="#i-send"/></svg>Cotizar proyecto</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><svg class="i"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div>
+        <span class="hello"><svg class="i"><use href="#i-code"/></svg>Hola, soy</span>
+        <h1>Diego Navarro</h1>
+        <h2>Ingeniero de Software</h2>
+        <p class="lead">Desarrollo soluciones digitales funcionales, modernas y personalizadas para negocios, instituciones y emprendedores.</p>
+        <div class="ctas">
+          <a class="btn btn-p" href="#proyectos"><svg class="i"><use href="#i-rocket"/></svg>Ver proyectos</a>
+          <a class="btn btn-o" href="#contacto"><svg class="i"><use href="#i-mail"/></svg>Contáctame</a>
+        </div>
+        <ul class="offer">
+          <li><svg class="i"><use href="#i-monitor"/></svg>Páginas web profesionales</li>
+          <li><svg class="i"><use href="#i-phone"/></svg>Aplicaciones móviles</li>
+          <li><svg class="i"><use href="#i-layers"/></svg>Sistemas a la medida</li>
+        </ul>
+      </div>
+      <div class="sign" aria-hidden="true">
+        <img src="assets/img/logo.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE MÍ ===== -->
+  <section class="block" id="sobre-mi">
+    <div class="wrap">
+      <div class="about">
+        <div class="code" aria-hidden="true">
+          <div class="bar"><i></i><i></i><i></i><span>diego.js</span></div>
+<pre><span class="k">const</span> <span class="v">diego</span> <span class="p">=</span> {
+  rol<span class="p">:</span> <span class="s">"Ingeniero de Software"</span>,
+  escuela<span class="p">:</span> <span class="s">"FIME, UANL"</span>,
+  construye<span class="p">:</span> [<span class="s">"web"</span>, <span class="s">"móvil"</span>, <span class="s">"sistemas"</span>],
+  enfoque<span class="p">:</span> <span class="s">"lo que tu negocio necesita"</span>,
+  disponible<span class="p">:</span> <span class="k">true</span>
+};
+
+<span class="c">// ¿Tienes un proyecto? Hablemos.</span>
+<span class="v">diego</span>.<span class="v">cotizar</span>(<span class="v">tuIdea</span>);</pre>
+        </div>
+        <div>
+          <h2>Sobre mí</h2>
+          <p>Soy Ingeniero de Software con experiencia en el desarrollo de aplicaciones web y móviles, con un enfoque en soluciones prácticas, atractivas y centradas en las necesidades del cliente.</p>
+          <ul class="facts">
+            <li><svg class="i"><use href="#i-cap"/></svg>Ingeniería en Software (FIME, UANL)</li>
+            <li><svg class="i"><use href="#i-code"/></svg>Desarrollo full stack</li>
+            <li><svg class="i"><use href="#i-bulb"/></svg>Soluciones personalizadas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROYECTOS =====
+       Para usar una captura real: guarda la imagen en assets/proyectos/ con el
+       nombre indicado en cada <img>. Si no existe, se muestra la vista dibujada. -->
+  <section class="block" id="proyectos">
+    <div class="wrap">
+      <div class="sh"><h2>Proyectos destacados</h2><p>Sitios, paneles y apps que ya están en uso. Abre los que tienen enlace para verlos en vivo.</p></div>
+      <div class="grid-p">
+
+        <a class="card" href="https://payflow-web-production-ca4e.up.railway.app/planeacion?tab=graficas" target="_blank" rel="noopener">
+          <div class="thumb">
+            <img src="assets/proyectos/payflow.webp" alt="Captura de Axioma Payflow" loading="lazy" onerror="this.remove()">
+            <div class="mock m-pay" aria-hidden="true">
+              <div class="side"><i></i><i class="on"></i><i></i><i></i><i></i><i></i></div>
+              <div class="main">
+                <div class="ttl">axioma. <b>payflow</b></div>
+                <div class="tabs"><i></i><i class="on"></i><i></i></div>
+                <div class="chart"><i style="height:45%"></i><i style="height:62%"></i><i style="height:38%"></i><i style="height:80%"></i><i style="height:55%"></i><i style="height:70%"></i><i style="height:48%"></i><i style="height:90%"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="body">
+            <div class="client">Axioma Inteligencia Inmobiliaria</div>
+            <h3>Axioma Payflow</h3>
+            <p>Plataforma interna para planeación de pagos, gestión de proyectos y gráficas de seguimiento semanal.</p>
+            <div class="foot"><span class="tag">React</span><span class="tag">Node.js</span><span class="go">Ver en vivo<svg class="i"><use href="#i-ext"/></svg></span></div>
+          </div>
+        </a>
+
+        <a class="card" href="https://portal.axiomaproyectos.mx/" target="_blank" rel="noopener">
+          <div class="thumb">
+            <img src="assets/proyectos/portal-axioma.webp" alt="Captura del Portal Directivo Axioma" loading="lazy" onerror="this.remove()">
+            <div class="mock m-ax" aria-hidden="true">
+              <div class="top2">axioma.<em>Portal directivo</em></div>
+              <div class="cols">
+                <div class="panel"><i class="w"></i>
+                  <svg viewBox="0 0 100 44" preserveAspectRatio="none"><polyline points="0,38 15,30 30,32 45,20 60,24 75,12 100,6" fill="none" stroke="#a06bff" stroke-width="2"/><polyline points="0,42 20,37 40,38 60,31 80,29 100,22" fill="none" stroke="#555" stroke-width="1.5"/></svg>
+                </div>
+                <div class="panel"><i class="w"></i><i></i><i></i><i style="width:70%"></i><i></i><i style="width:50%"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="body">
+            <div class="client">Axioma Inteligencia Inmobiliaria</div>
+            <h3>Portal Directivo Axioma</h3>
+            <p>Portal privado para la dirección: indicadores, avance de proyectos y reportes en un solo lugar.</p>
+            <div class="foot"><span class="tag">React</span><span class="tag">Supabase</span><span class="go">Ver en vivo<svg class="i"><use href="#i-ext"/></svg></span></div>
+          </div>
+        </a>
+
+        <a class="card" href="https://pim-centro-psicologia.netlify.app/" target="_blank" rel="noopener">
+          <div class="thumb">
+            <img src="assets/proyectos/pim-sitio.webp" alt="Captura del sitio de PIM" loading="lazy" onerror="this.remove()">
+            <div class="mock m-pim" aria-hidden="true">
+              <span class="sun"></span><span class="hill"></span><span class="hill2"></span>
+              <div class="brand2">PIM · Psicología Integral</div>
+              <div class="h">Comprender antes de <em>juzgar.</em></div>
+              <span class="pill">Solicitar cita</span>
+            </div>
+          </div>
+          <div class="body">
+            <div class="client">PIM Psicología Integral Multidisciplinaria A.C.</div>
+            <h3>PIM, sitio institucional</h3>
+            <p>Sitio para familias con valoraciones del desarrollo que generan un reporte imprimible y solicitud de citas.</p>
+            <div class="foot"><span class="tag">JavaScript</span><span class="tag">Supabase</span><span class="go">Ver en vivo<svg class="i"><use href="#i-ext"/></svg></span></div>
+          </div>
+        </a>
+
+        <a class="card" href="https://pim-veronicamiranda.netlify.app/" target="_blank" rel="noopener">
+          <div class="thumb">
+            <img src="assets/proyectos/pim-panel.webp" alt="Captura del panel de PIM" loading="lazy" onerror="this.remove()">
+            <div class="mock m-pan" aria-hidden="true">
+              <div class="side"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="main">
+                <div class="hi">Hola, Verónica</div>
+                <div class="kpis"><span></span><span></span><span></span><span></span></div>
+                <div class="chart"><i style="height:40%"></i><i style="height:65%"></i><i style="height:50%"></i><i style="height:85%"></i><i style="height:60%"></i><i style="height:75%"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="body">
+            <div class="client">PIM Psicología Integral Multidisciplinaria A.C.</div>
+            <h3>PIM, espacio de trabajo</h3>
+            <p>Panel privado para la psicóloga: perfiles de niños, notas de sesión, agenda y control de finanzas.</p>
+            <div class="foot"><span class="tag">JavaScript</span><span class="tag">Supabase</span><span class="go">Ver en vivo<svg class="i"><use href="#i-ext"/></svg></span></div>
+          </div>
+        </a>
+
+        <article class="card is-wip">
+          <div class="thumb">
+            <span class="badge-wip">En progreso</span>
+            <img src="assets/proyectos/borrego-drive.webp" alt="Captura de Borrego Drive" loading="lazy" onerror="this.remove()">
+            <div class="mock m-drv" aria-hidden="true">
+              <div class="t">Borrego Drive<small>Control de vehículos</small></div>
+              <div class="phone"><i></i><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+          <div class="body">
+            <h3>Borrego Drive</h3>
+            <p>App móvil para control y registro de vehículos.</p>
+            <div class="progress" role="progressbar" aria-label="Avance de Borrego Drive" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70" style="--avance:70%">
+              <div class="progress-head"><span>En desarrollo</span><b>70%</b></div>
+              <div class="progress-track"><div class="progress-fill"></div></div>
+            </div>
+            <div class="foot"><span class="tag">Kotlin</span><span class="tag">Android</span></div>
+          </div>
+        </article>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="block" id="servicios">
+    <div class="wrap">
+      <div class="sh"><h2>Servicios</h2><p>Desde la primera idea hasta el mantenimiento una vez que está en uso.</p></div>
+      <div class="grid-s">
+        <div class="svc"><div class="ic"><svg class="i"><use href="#i-monitor"/></svg></div><h3>Desarrollo web</h3><p>Sitios y plataformas modernas, rápidas y responsivas.</p></div>
+        <div class="svc"><div class="ic"><svg class="i"><use href="#i-phone"/></svg></div><h3>Apps móviles</h3><p>Aplicaciones para Android enfocadas a tu negocio.</p></div>
+        <div class="svc"><div class="ic"><svg class="i"><use href="#i-layers"/></svg></div><h3>Sistemas administrativos</h3><p>Herramientas internas para control, seguimiento y gestión.</p></div>
+        <div class="svc"><div class="ic"><svg class="i"><use href="#i-pen"/></svg></div><h3>Diseño UI/UX</h3><p>Interfaces atractivas, funcionales y centradas en el usuario.</p></div>
+        <div class="svc"><div class="ic"><svg class="i"><use href="#i-gear"/></svg></div><h3>Soporte y mantenimiento</h3><p>Actualizaciones, corrección de errores y mejoras continuas.</p></div>
+        <div class="svc"><div class="ic"><svg class="i"><use href="#i-rocket"/></svg></div><h3>Asesoría tecnológica</h3><p>Te ayudo a elegir la herramienta correcta antes de invertir.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECNOLOGÍAS ===== -->
+  <section class="block" id="tecnologias">
+    <div class="wrap">
+      <div class="sh"><h2>Tecnologías que utilizo</h2></div>
+      <ul class="tech">
+        <li><span class="ico"><img src="assets/tech/react.svg" alt=""></span>React</li>
+        <li><span class="ico"><img src="assets/tech/nodejs.svg" alt=""></span>Node.js</li>
+        <li><span class="ico"><img src="assets/tech/javascript.svg" alt=""></span>JavaScript</li>
+        <li><span class="ico"><img src="assets/tech/python.svg" alt=""></span>Python</li>
+        <li><span class="ico"><img src="assets/tech/kotlin.svg" alt=""></span>Kotlin</li>
+        <li><span class="ico"><img src="assets/tech/csharp.svg" alt=""></span>C#</li>
+        <li><span class="ico"><img src="assets/tech/angular.svg" alt=""></span>Angular</li>
+        <li><span class="ico"><img src="assets/tech/firebase.svg" alt=""></span>Firebase</li>
+        <li><span class="ico"><img src="assets/tech/mysql.svg" alt=""></span>MySQL</li>
+        <li><span class="ico"><img src="assets/tech/postgresql.svg" alt=""></span>PostgreSQL</li>
+        <li><span class="ico"><img src="assets/tech/supabase.svg" alt=""></span>Supabase</li>
+        <li><span class="ico"><img src="assets/tech/figma.svg" alt=""></span>Figma</li>
+      </ul>
+
+      <div class="cta">
+        <img class="sheep" src="assets/img/logo.svg" alt="">
+        <img class="ghost" src="assets/img/logo-linea.svg" alt="">
+        <div class="txt">
+          <h2>¿Tienes una idea o proyecto?</h2>
+          <p>Puedo ayudarte a convertirla en una solución digital real.</p>
+        </div>
+        <a class="btn" href="#contacto"><svg class="i"><use href="#i-send"/></svg>Contáctame</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="block" id="contacto">
+    <div class="wrap">
+      <div class="sh"><h2>Contacto</h2><p>Cuéntame qué necesitas y te respondo con una propuesta.</p></div>
+      <div class="contact">
+        <div class="cbox">
+          <h3>Escríbeme directo</h3>
+          <p>La forma más rápida es por WhatsApp o correo.</p>
+          <ul class="clist">
+            <li><a id="lnkWa" href="#" target="_blank" rel="noopener"><svg class="i"><use href="#i-chat"/></svg><span>WhatsApp<small id="txtWa"></small></span></a></li>
+            <li><a id="lnkMail" href="#"><svg class="i"><use href="#i-mail"/></svg><span>Correo<small id="txtMail"></small></span></a></li>
+            <li><a id="lnkIn" href="#" target="_blank" rel="noopener"><svg class="i"><use href="#i-link"/></svg><span>LinkedIn<small>Perfil profesional</small></span></a></li>
+            <li><a id="lnkGh" href="#" target="_blank" rel="noopener"><svg class="i"><use href="#i-gh"/></svg><span>GitHub<small>Código y repositorios</small></span></a></li>
+          </ul>
+        </div>
+        <div class="cbox">
+          <h3>Cotizar proyecto</h3>
+          <p>Al enviar se abre WhatsApp con tu mensaje listo.</p>
+          <form id="quote">
+            <div class="row2">
+              <label>Nombre<input name="nombre" required autocomplete="name"></label>
+              <label>Tipo de proyecto
+                <select name="tipo">
+                  <option>Página web</option><option>App móvil</option><option>Sistema a la medida</option><option>Diseño UI/UX</option><option>Soporte o mantenimiento</option><option>Otro</option>
+                </select>
+              </label>
+            </div>
+            <label>¿Qué necesitas?<textarea name="mensaje" required placeholder="Ej. Una página para mi negocio con catálogo y botón de WhatsApp"></textarea></label>
+            <button class="btn btn-p" type="submit"><svg class="i"><use href="#i-send"/></svg>Enviar por WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Diego Navarro, Ingeniero de Software.</span>
+    <a href="#inicio">Volver arriba</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+Coloca aquí las capturas reales de tus proyectos con estos nombres exactos:
+
+  payflow.webp        Axioma Payflow
+  portal-axioma.webp  Portal Directivo Axioma
+  pim-sitio.webp      PIM, sitio institucional
+  pim-panel.webp      PIM, espacio de trabajo
+  borrego-drive.webp  Borrego Drive
+
+Formato .webp (o cambia la extensión en index.html). Tamaño recomendado: 1600 x 950 px (proporción 16:9.5).
+Si una imagen no existe, la tarjeta muestra la vista previa dibujada.
